@@ -1,12 +1,14 @@
+## Import section
 from flask import Flask, render_template, request, jsonify
 
 app = Flask(__name__)
 
-
+## Routes for homepage
 @app.route('/', methods=['GET', 'POST']) # To render Homepage
 def home_page():
     return render_template('index.html')
 
+## Route for calculator app
 @app.route('/calculator', methods=['POST'])  # This will be called from UI
 def math_operation():
     if (request.method=='POST'):

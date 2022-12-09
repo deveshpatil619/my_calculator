@@ -1,7 +1,4 @@
 ## Adding the Import section 
-import os
-import glob
-import tensorflow
 from flask import Flask, render_template, request, jsonify
 
 app = Flask(__name__)
